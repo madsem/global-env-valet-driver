@@ -3,11 +3,14 @@
 Loads additional ENV vars from current parent working directory.
 This way you can easily re-use ENV vars & make them available for all projects.
 
+Your site-specific env files will continue to work as normal.
+
 ## Requirements
 - Laravel Valet 2.3.*
 
 ## Installation
-- Just drop the file in your `~/.config/valet/Drivers` directory.
+- `cd ~/.config/valet/Drivers`.
+- Clone the repository inside the `Drivers` dir: `git clone https://github.com/madsem/global-env-valet-driver`. The driver will be found even though it's not directly in the `/Drivers` directory...
 - Create a new `.valet-env.php` in the parent working directory where you keep your projects.  
 *Example: You have projects in `~/Sites`, then create the file in `~/Sites/.valet-env.php`.*
 - Have it return an array, like this:
