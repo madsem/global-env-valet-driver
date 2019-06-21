@@ -28,3 +28,7 @@ return [
 Now all these ENV vars will be available globally to all of your projects.
 
 Note: If you have multiple registered paths, this should still make the ENV vars available in all of your projects, even in different paths. (But is untested)
+
+
+### Hat Tip
+[DrByte](https://github.com/drbyte) is the man
